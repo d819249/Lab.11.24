@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first CSS stylesheet</title>
+    <style>
+        body {
+            color:blueviolet ; 
+            background-color: springgreen; 
+            font-family: 'Arial', sans-serif; 
+        }
+
+        h1 {
+            font-family: 'Georgia', serif; 
+        }
+
+        ul.navbar {
+            position: relative;
+            top: 1em;
+            left: 1em;
+            width: 10em;
+        }
+
+        @media all {
+            /* Styles for all media types */
+            body {
+                font-size: 16px; /* Adjust font size for all media */
+            }
+        }
+
+        @media print {
+            /* Styles for print media */
+            body {
+                color: orangered; 
+                background-color: springgreen; 
+            }
+        }
+    </style>
+</head>
+<body color="#333" background-color="#f4f4f4">
+
+    <h1>My first style page</h1>
+    
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>This is the third paragraph.</p>
+
+    <ul class="navbar">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <select>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+
+</body>
+</html>
